@@ -1,8 +1,24 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;300;400;500;700;900&display=swap');
+
 html,
 body {
-  margin: 0;
   padding: 0;
-  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  margin: 0;
+  font-family: 'Noto Sans JP', sans-serif;
+}
+
+.nav {
+  position: sticky;
+  z-index: 100;
+  box-shadow: rgb(0 0 0 /12%) 0 6px 16px;
+  padding: 30px;
+}
+
+.logo {
+  width: 130px;
+  height: 40px;
+  background-image: url('../images/airbnb-logo.png');
+  background-size: 130px;
 }
 
 .container {
@@ -12,8 +28,8 @@ body {
 }
 
 .section {
-  display: flex;
   margin: 20px 0 0 0;
+  display: flex;
   justify-content: space-between;
 }
 
@@ -24,9 +40,9 @@ body {
 .price-box {
   width: 35%;
   height: 250px;
-  border: 1px solid rgb(220, 220, 220);
+  border: 1px solid rgb(221,221,221);
   border-radius: 12px;
-  box-shadow: rgb(0 0 0 / 12%) 0 6px 16px;
+  box-shadow: rgb( 0 0 0 / 12%) 0 6px 16px;
   padding: 24px;
   display: flex;
   flex-direction: column;
@@ -37,23 +53,22 @@ body {
   width: 90%;
   padding: 15px;
   border-radius: 10px;
-  color: rgb(255, 255, 255);
+  color: rgb(255,255,255);
   text-align: center;
-  background: linear-gradient(135deg, rgb(255,56,92) 20%, rgb(189, 30, 89));
-  cursor: pointer;
+  background: linear-gradient(135deg, rgb(255,56,92) 20%, rgb(189,30,89));
 }
 
 .images-section {
   display: flex;
   border-radius: 10px;
   overflow: hidden;
-  max-height: 340px;
+  max-height: 370px;
 }
 
 .main-image {
   width: 50%;
   overflow: hidden;
-  max-height: 540px;
+  max-height: 550px;
 }
 
 .main-image img {
@@ -68,7 +83,7 @@ body {
 .feed-container {
   width: 50%;
   height: 100vh;
-  background-color: #e6e4e4;
+  background-color: #f8f8f8;
   padding: 20px;
 }
 
@@ -77,13 +92,36 @@ body {
   flex-wrap: wrap;
 }
 
+.map {
+  width: 50%;
+}
+
 .card {
   padding: 10px;
-  width: 300px;
 }
 
 .card img {
-  width: 240px;
-  height: 140px;
-  border-radius: 18px;
+  max-width: 250px;
+  height: 160px;
+  border-radius: 20px;
+}
+
+.image {
+  width: 50%;
+}
+
+.image img {
+  width: 100%;
+  max-height: 280px;
+}
+
+.sub-images-section {
+  width: 50%;
+  display: flex;
+  flex-wrap: wrap;
+  overflow: hidden;
+}
+
+.line {
+  border: 1px solid grey;
 }
